@@ -1,0 +1,47 @@
+{
+    "name": "naoray/dusk-automation",
+    "description": "Bringing dusks power outside the tests directory to automate web tasks.",
+    "type": "package",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "dusk",
+        "automation"
+    ],
+    "authors": [
+        {
+            "name": "Krishan Koenig",
+            "email": "krishan.koenig@googlemail.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "5.5.*",
+        "laravel/dusk": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Naoray\\DuskAutomation\\": "./src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Naoray\\DuskAutomation\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Naoray\\DuskAutomation\\DuskAutomationServiceProvider"
+            ],
+            "aliases": {
+                "Dusk": "Naoray\\DuskAutomation\\Dusk"
+            }
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^3.5"
+    }
+}
