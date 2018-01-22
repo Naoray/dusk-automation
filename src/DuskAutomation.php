@@ -57,8 +57,8 @@ class DuskAutomation
 
         return RemoteWebDriver::create(
             config('dusk_automation.driver.url'), DesiredCapabilities::chrome()->setCapability(
-            ChromeOptions::CAPABILITY, $options
-        )
+                ChromeOptions::CAPABILITY, $options
+            )
         );
     }
 
@@ -114,6 +114,7 @@ class DuskAutomation
             $this->storeConsoleLogsFor($browsers);
 
             static::$browsers = $this->closeAllButPrimary($browsers);
+            static::tearDownDuskClass();
         }
     }
 
