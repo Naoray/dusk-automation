@@ -1,5 +1,8 @@
 # Change Log
 
+## [v1.0.1](https://github.com/naoray/dusk-automation/tree/v1.0.1) (2018-02-08)
+[Full Changelog](https://github.com/naoray/dusk-automation/compare/v1.0...v1.0.1)
+
 ## [v1.0](https://github.com/naoray/dusk-automation/tree/v1.0) (2018-01-22)
 
 
