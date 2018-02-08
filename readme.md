@@ -7,7 +7,11 @@
 dusks power outside the tests directory to automate web tasks.
 
 ## Install
+#### Laravel 5.6+
 `composer require naoray/dusk-automation`
+
+#### Laravel 5.5
+`composer require naoray/dusk-automation:1.0`
 
 ## Usage
 Make sure to create the storage directories listed in the configs.
